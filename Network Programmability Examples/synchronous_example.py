@@ -1,16 +1,16 @@
-import requests
-import json
+import requests
+import json
 
-base_url = 'http://httpbin.org/'
+base_url = 'http://httpbin.org/'
 
-def get_delay(seconds):
-    endpoint = f"/delay/{seconds}"
+def get_delay(seconds):
+    endpoint = f"/delay/{seconds}"
 
-    print(f"Getting with {seconds} delay...")
+    print(f"Getting with {seconds} delay...")
 
-    response = requests.get(base_url + endpoint)
-    data = response.json()
-    print(json.dumps(data, indent=4))
+    response = requests.get(base_url + endpoint)
+    data = response.json()
+    print(json.dumps(data, indent=4))
 
 get_delay(3)
 
